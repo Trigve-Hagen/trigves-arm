@@ -1,2 +1,11 @@
 # trigves-arm
-This is a Rapid Application Development tool designed to speed up the work flow by taking out the need to run migrate commands from the command line. It works on database tables and rows by mapping a multidementional array to the relational database the same way an Orm maps an object. Once installed you have the class autoloaded on every page refresh and a function called that checks the tablesArray for new arrays and then compares it to the database to see if updates are needed. If updates are needed it does them automatically erasing the need to run make and migrate commands from the command line. This branch is for custom php projects that run on your home made architectures. I will be updating it with new features and creating other branchs for symfony, laravel and code-igniter.
+This is a Rapid Application Development tool designed to speed up the work flow by taking out the need to run back and forth from the database. It works on database tables and rows by mapping a multidementional array to the relational database the same way an Orm maps an object. Once installed place the $this_>ArmCheckTables(); function somewhere where it will be ran everytime your page refreshes. If updates are needed it does them automatically. This branch is for custom php projects that run on your home made architectures. I will be updating it with new features and creating other branchs for symfony, laravel and code-igniter.
+
+INSTALLATION
+1) Put class where you can inherit it through extends or include it.
+2) Fill in database connection variables,
+	private $_db_host;
+	private $_db_name;
+	private $_db_user;
+	private $_db_pass;
+3) Call $this->ArmCheckTables()
