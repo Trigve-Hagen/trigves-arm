@@ -13,7 +13,7 @@ class Arm {
 	* create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP - 'created_at'=>'createdat_c3po007r2d2'
 	* and updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP - 'updated_at'=>'updatedat_c3po007r2d2'
 	* You can name the sections separated by the underscore anything - blogid_45g234y5g5y or createad_rewquy3o45ouy
-	*
+	* 
 	*/
 	private $_tablesArray = array(
 		'users' => array('tablename'=>'users_c3po007r2d2', 'id'=>'userid_c3po007r2d2', 'created_at'=>'createdat_c3po007r2d2', 'updated_at'=>'updatedat_c3po007r2d2', 'name'=>'name_c3po007r2d2_VARCHAR_255', 'cell'=>'cell_c3po007r2d2_VARCHAR_255', 'email'=>'email_c3po007r2d2_VARCHAR_255', 'username'=>'username_c3po007r2d2_VARCHAR_255', 'password'=>'password_c3po007r2d2_VARCHAR_255')
@@ -25,7 +25,7 @@ class Arm {
 	
 	private function _ArmCreateNewTable($rowArray) {
 		$queryString = "CREATE TABLE IF NOT EXISTS ".$rowArray['tablename']."(";
-		if(isset($rowArray['id'])) $rowArray['id']." INT NOT NULL AUTO_INCREMENT, ";
+		if(isset($rowArray['id'])) $queryString .= $rowArray['id']." INT NOT NULL AUTO_INCREMENT, ";
 		if(isset($rowArray['created_at'])) $queryString .= $rowArray['created_at']." TIMESTAMP DEFAULT CURRENT_TIMESTAMP, ";
 		if(isset($rowArray['updated_at'])) $queryString .= $rowArray['updated_at']." TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, ";
 		$rowcount = count($rowArray); $count = 1; 
