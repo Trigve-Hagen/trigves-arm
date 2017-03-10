@@ -9,3 +9,8 @@ INSTALLATION
 	private $_db_user;  
 	private $_db_pass;  
 3) Call $this->ArmCheckTables();
+
+
+3/10/2017 - updates  
+* added support for adding multiple rows in a table that are next to each other.  
+* added support for droping unneeded tables - just erase them from the array.  
