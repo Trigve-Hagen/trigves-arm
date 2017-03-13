@@ -22,3 +22,6 @@ INSTALLATION
 3/10/2017 - updates  
 * added support for adding multiple rows in a table that are next to each other.  
 * added support for droping unneeded tables - just erase them from the array.  
+
+3/13/2017 - updates  
+* added support for changing row names
