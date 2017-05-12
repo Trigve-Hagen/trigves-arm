@@ -4,14 +4,11 @@ This is a Rapid Application Development tool designed to speed up the work flow 
 YOU REALLY HAVE TO WATCH WHEN YOU ARE CREATING YOUR TABLES AND FIELDS
  * WHEN FIRST PUT INTO USE IT WILL ERASE ANYTHING DONE BEFORE IT AND CREATE A SAMPLE USER DATABASE
  * NAMING TWO ROWS THE SAME WILL HALT EXECUTION AND CREATE AN ERROR  
- * NAMING TWO TABLES THE SAME WILL HALT EXECUTION AND CREATE AN ERROR
- * THE DATABASE WILL TURN THE UPPERCASES TO LOWER CASES AND YOUR ARRAY WON'T MATCH THE DATABASE
- * STICK TO LOWER CASE IN THE SECTIONS THAT HAVE LOWER CASE AND ONLY USE UPPER CASE WHEN TYPING THE ROW
- * DATABASES SOMETIMES ONLY ALLOW A TOTAL NUMBER OF VARCHAR CHARACTERS IN A TABLE - THE ARRAY WON'T UPDATE THE DATABASE IN THIS CASE
+ * NAMING TWO TABLES THE SAME WILL HALT EXECUTION AND CREATE AN ERROR  
+ * DATABASES SOMETIMES ONLY ALLOW A TOTAL NUMBER OF VARCHAR CHARACTERS IN A TABLE - THE ARRAY WON'T UPDATE THE DATABASE IN THIS CASE  
+ * WHEN QUERYS ARE RAN ON THE DATABASE THE DATABASES TURNS UPPERCASE TO LOWER CASE. THEN WHEN CHECKED AGAINST - $_tablesArray (UPPER CASE) AGAINST THE DATABASE ARRAY(LOWWER CASE) IT RETURNED NOT IN THE ARRAY AND DELETED THEM BOTH. - users_c3p0r2d2007OG - has to be users_c3p0r2d2007og
 
- * IT WAS ERRORING ON LOCALHOST BECAUSE I HAD THE TABLE NAMES INCLUDING UPPER CASE CHARACTERS. WHEN IT CREATED THE DATABASES IT TURNED THEM TO LOWER CASE. THEN WHEN I CHECKED MY $_tablesArray (UPPER CASE) AGAINST THE DATABASE ARRAY(LOWWER CASE) IT RETURNED NOT IN THE ARRAY AND DELETED THEM BOTH. - users_c3p0r2d2007OG - has to be users_c3p0r2d2007og
-
-Due to adding new features to the class last week I was running into new errors. When debbugging I realized the new error was not a new error at all but this. If you had named two databases the same they would both be erased when dropping a table. I added new logic for reporting the error. I also adding logic to report having two rows with the same name and errors and messages for everything else. PLease be carefull anyways. I take no responsibility for lost data! Use at your risk. If I have no new problems to report in the next month of developing with it than it is done. Happy Coding!!  
+I take no responsibility for lost data! Use at your risk. Happy Coding!!  
 
 INSTALLATION  
 1) Put class where you can inherit it through extends or include it.  
