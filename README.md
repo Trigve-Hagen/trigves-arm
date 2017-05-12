@@ -1,12 +1,11 @@
 # trigves-arm
-This is a Rapid Application Development tool designed to speed up the work flow by taking out the need to run back and forth from the database. It works on database tables and rows by mapping a multidementional array to the relational database the same way an Orm maps an object. Once installed place the $this_>ArmCheckTables(); function somewhere where it will be ran everytime your page refreshes. If updates are needed it does them automatically. This branch is for custom php projects that run on your home made architectures. I will be updating it with new features and creating other branchs for symfony, laravel and code-igniter.
+This is a Rapid Application Development tool designed to speed up the work flow by taking out the need to run back and forth from the database. It works on database tables and rows by mapping a multidementional array to the relational database the same way an Orm maps an object. Once installed place the $this_>ArmCheckTables(); function somewhere where it will be ran everytime your page refreshes. If updates are needed it does them automatically.
 
-YOU REALLY HAVE TO WATCH WHEN YOU ARE CREATING YOUR TABLES AND FIELDS  
+YOU REALLY HAVE TO WATCH WHEN YOU ARE CREATING YOUR TABLES AND FIELDS
+ * WHEN FIRST PUT INTO USE IT WILL ERASE ANYTHING DONE BEFORE IT AND CREATE A SAMPLE USER DATABASE
  * NAMING TWO ROWS THE SAME WILL HALT EXECUTION AND CREATE AN ERROR  
- * NO TWO FIELDS IN A TABLE CAN HAVE THE SAME NAME  
- * NAMING TWO TABLES THE SAME WILL HALT EXECUTION AND CREATE AN ERROR  
- * NO TWO TABLES CAN HAVE THE SAME NAME 
- * THE DATABASE WILL TURN THE UPPERCASES TO LOWER CASES AND YOUR ARRAY WON'T MATCH THE DATABASES
+ * NAMING TWO TABLES THE SAME WILL HALT EXECUTION AND CREATE AN ERROR
+ * THE DATABASE WILL TURN THE UPPERCASES TO LOWER CASES AND YOUR ARRAY WON'T MATCH THE DATABASE
  * STICK TO LOWER CASE IN THE SECTIONS THAT HAVE LOWER CASE AND ONLY USE UPPER CASE WHEN TYPING THE ROW
  * DATABASES SOMETIMES ONLY ALLOW A TOTAL NUMBER OF VARCHAR CHARACTERS IN A TABLE - THE ARRAY WON'T UPDATE THE DATABASE IN THIS CASE
 
